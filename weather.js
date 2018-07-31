@@ -5,7 +5,7 @@ $(document).ready(function(){
   
     var city = document.getElementById("search_box").value;
     var city = $('#search_box').val();
-    var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "Texas"
+    var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city
     var apiKey = "26a3e08a14a8b0a62e45a779e7f267d8"; // Replace "APIKEY" with your own API key;
 	
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
         //var weatherBox = document.getElementById("weather");
 		//weatherBox.innerHTML = "<p><b>Weather: </b> " + degCInt + "&#176; C / " + degFInt + "&#176; F</p><p>" + condition + "</p>";
         var $weatherBox = $('#weather');
-        $weatherBox.append("<h3>Weather in: " + name + ", Texas" + "</h3>");
+        $weatherBox.append("<h3>Weather in: " + name + "</h3>");
         $weatherBox.append("<p>Currently: " + condition + "</p>");
         $weatherBox.append("<p>Humidity: " + humidity + " %" + "</p>");
         $weatherBox.append("<p>Weather: " + degCInt + "&#176; C / " + degFInt + "&#176; F</p>");
